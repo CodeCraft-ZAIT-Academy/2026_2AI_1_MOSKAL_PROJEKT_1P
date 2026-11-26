@@ -1,0 +1,138 @@
+
+
+body.podstranka {
+  background: #fff;
+  color: #222;
+}
+
+.podstranka .header {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+}
+.podstranka .menu a.active {
+  color: #0b1f4d;
+  border-bottom: 2px solid #0b1f4d;
+}
+
+.podstranka .footer {
+  color: #666;
+  border-top: none;
+}
+
+
+.page-title {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 1rem;
+}
+.page-title h1 {
+  margin: 0 0 .8rem;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  text-transform: uppercase;
+  color: #0b1f4d;
+}
+.page-title p {
+  margin: 0;
+  max-width: 55ch;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+
+.services-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+
+.service-group h2 {
+  margin: 3rem 0 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #0b1f4d;
+}
+.service-group:first-child h2 { margin-top: 0; }
+
+.service-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.service-list li { padding: .9rem 0; }
+.service-head {
+  display: flex;
+  align-items: baseline;
+}
+.service-head h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111;
+  transition: color .2s;
+}
+.service-list li:hover h3 { color: #0b1f4d; }
+
+.dots {
+  flex: 1;
+  margin: 0 .8rem;
+  border-bottom: 2px dotted #c5ccd8;
+  transform: translateY(-4px);
+}
+.price {
+  font-weight: 700;
+  color: #0b1f4d;
+  white-space: nowrap;
+}
+.service-list p {
+  margin: .3rem 0 0;
+  max-width: 52ch;
+  color: #666;
+  font-size: .95rem;
+}
+
+
+.services-aside {
+  position: sticky;
+  top: 110px;
+}
+.aside-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #e9edf3;
+}
+.quick-contact {
+  margin-top: 1.5rem;
+  padding: 1.6rem;
+  background: #0b1f4d;
+  color: #fff;
+}
+.quick-contact h3 {
+  margin: 0 0 .5rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.quick-contact p { margin: 0 0 .4rem; color: #dfe6f5; }
+.quick-contact a { color: #fff; font-weight: 600; }
+.quick-contact .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #fff;
+  color: #0b1f4d;
+}
+.quick-contact .btn:hover { background: #dfe6f5; }
+
+
+@media (max-width: 850px) {
+  .services-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .services-aside { position: static; }
+  .aside-photo { aspect-ratio: 16 / 10; }
+}
